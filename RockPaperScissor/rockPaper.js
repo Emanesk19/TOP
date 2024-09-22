@@ -1,43 +1,50 @@
-let humanScore = 0;
-let computerScore = 0;
-for (let i = 0; i < 5; i++) {
-  let user1 = prompt(
-    "Enter Your Choice(Rock , Papper , Scissor :) user 1 "
-  ).toLowerCase();
+let answer1 = "";
+let answer2 = "";
 
-  function getComputerChoice(num) {
-    const choices = ["rock", "papper", "scissor"];
-    return choices[num];
-  }
-  let num = Math.floor(Math.random() * 2) + 1;
-  let user2 = getComputerChoice(num);
-  playRound(user1, user2);
-}
+const label = document.querySelector("#result");
+const btns = document.querySelectorAll("button");
 
-function playRound(humanChoice, computerChoice) {
+btns.forEach((buttons) => {
+  buttons.addEventListener("click", (e) => {
+    if (answer1 === "") {
+      answer1 = buttons.textContent;
+      console.log("answer 1", answer1);
+    } else {
+      answer2 = buttons.textContent;
+      console.log("answer 1", answer2);
+    }
+    playRound(answer1, answer2);
+  });
+});
+
+function playRound(Answer1, Answer2) {
   if (
-    (humanChoice.includes("rock") && computerChoice?.includes("scissor")) ||
-    (humanChoice.includes("papper") && computerChoice?.includes("rock")) ||
-    (humanChoice.includes("scissor") && computerChoice?.includes("papper"))
+    (Answer1.includes("Rock") && Answer2?.includes("Scissor")) ||
+    (Answer1.includes("Papper") && Answer2?.includes("Rock")) ||
+    (Answer1.includes("Scissor") && Answer2?.includes("Papper"))
   ) {
-    console.log("humanChoice is the winner");
-    humanScore++;
+    label.textContent = "User 1 is the winner";
   } else if (
-    (humanChoice.includes("scissor") && computerChoice?.includes("rock")) ||
-    (humanChoice.includes("rock") && computerChoice?.includes("papper")) ||
-    (humanChoice.includes("papper") && computerChoice?.includes("scissor"))
+    (Answer1.includes("Scissor") && Answer2?.includes("Rock")) ||
+    (Answer1.includes("Rock") && Answer2?.includes("Papper")) ||
+    (Answer1.includes("Papper") && Answer2?.includes("Scissor"))
   ) {
-    console.log("computerChoice is the winner");
-    computerScore++;
+    label.textContent = "User 2 is the winner";
   } else {
     console.log("No Winner");
   }
 }
 
-if (humanScore > computerScore) {
-  console.log("Human Won");
-} else if (humanScore < computerScore) {
-  console.log("Computer Won");
-} else {
-  console.log("Tie");
-}
+
+// for (let i = 0; i < 5; i++) {}
+// let user1 = prompt(
+//   "Enter Your Choice(Rock , Papper , Scissor :) user 1 "
+// ).toLowerCase();
+
+// function getComputerChoice(num) {
+//   const choices = ["rock", "papper", "scissor"];
+//   return choices[num];
+// }
+// let num = Math.floor(Math.random() * 2) + 1;
+// let user2 = getComputerChoice(num);
+
