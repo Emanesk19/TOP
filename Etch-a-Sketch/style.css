@@ -1,0 +1,11 @@
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 100px;
+}
+.divs{
+    background-color: rgb(141, 197, 197);
+    display: flex;
+    
+}
