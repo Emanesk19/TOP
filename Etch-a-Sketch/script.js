@@ -15,7 +15,7 @@ btn.addEventListener("click", () => {
 
 
 function createSquares(widthSize) {    
-  for (let i = 0; i < 16; i++) {
+  for (let i = 0; i < 300; i++) {
     const div = document.createElement("div");
     div.classList.add("divs");
     if (numOfSquares == 0) {
@@ -32,11 +32,14 @@ function createSquares(widthSize) {
     container.appendChild(div);
 
     div.addEventListener("mouseenter", () => {
-      div.style.background = "Black";
+        let rand1 = Math.floor(Math.random() * 255) + 1; 
+        let rand2 = Math.floor(Math.random() * 255) + 1; 
+        let rand3 = Math.floor(Math.random() * 255) + 1;        
+      div.style.background = `rgb(${rand1} ,${rand2} ,${rand3} )`;
     });
-    div.addEventListener("mouseleave", () => {
-      div.style.background = "rgb(141, 197, 197)";
-    });
+    // div.addEventListener("mouseleave", () => {
+    //   div.style.background = "rgb(141, 197, 197)";
+    // });
   }
 }
 

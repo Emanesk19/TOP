@@ -1,11 +1,16 @@
+body{
+    align-items: center;
+}
 #container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 100px;
+    width: 500px;
+    margin-left: 500px;
+    border: 1px solid rgba(72, 13, 13, 0.597);
 }
 .divs{
-    background-color: rgb(141, 197, 197);
     display: flex;
+    border: 1px solid black;
     
 }
