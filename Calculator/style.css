@@ -1,0 +1,56 @@
+.container {
+
+  display: flex;
+  width: 500px;
+  margin-left: 500px;
+  /* flex-direction: column; */
+  border-radius: 10px;
+  /* background-color: black; */
+  height: 600px;
+  justify-content: center;
+}
+button{
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#result {
+  width: 300px;
+  margin-left: 900px;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  align-items: end;
+}
+.subcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
+  height: 250px;
+  box-shadow: 10px 10px 10px 10px black;
+
+}
+.subcontainer button {
+  width: 100px;
+  height: 90px;
+  /* border-radius: 50px; */
+}
+#clearButton{
+  width: 300px;
+  height: 50px;
+  box-shadow: 5px 2px black;
+
+}
+.subcontainer:nth-child(10){
+  width: 100px;
+}
+.operatorContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: -50px;
+
+}
+.operatorContainer button {
+  width: 80px;
+  height: 102.5px;
+  box-shadow: 5px 2px black;
+}

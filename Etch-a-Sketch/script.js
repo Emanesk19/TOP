@@ -15,7 +15,7 @@ btn.addEventListener("click", () => {
 
 
 function createSquares(widthSize) {    
-  for (let i = 0; i < 300; i++) {
+  for (let i = 0; i < 240; i++) {
     const div = document.createElement("div");
     div.classList.add("divs");
     if (numOfSquares == 0) {
