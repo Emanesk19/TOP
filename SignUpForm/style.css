@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: "Jacquarda Bastarda 9"; */
+}
+.container{
+    display: flex;
+}
+.imageContainer{
+    width: 40vw;
+    height: 100vh;
+    background:url('./photo-1585202900225-6d3ac20a6962.avif');
+    background-size: cover;
+}
+.overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Pacifico";
+    font-size: 25px;
+    margin-top: 124px;
+    height: 15vh;
+    background-color: black;
+    opacity: 0.6;
+    color: #fff;
+    font-weight: bolder;
+}
+.overlay img{
+    width: 100px;
+    height: 100px;
+}
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: 100vh;
+}
+.formContainer h3{
+    margin-top: 120px;
+    margin-left: 30px;
+    line-height: 25px;
+    font-family: Arial, sans-serif;
+}
+.formContainer form{
+    margin-top: 20px;
+    height: 35vh;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.cont{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-left: 70px;
+    margin-top: 20px;
+
+}
+.fnameAndLname{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 18px;
+}
+.fname{
+    display: flex;
+    flex-direction: column;
+}
+.lname{
+    display: flex;
+    flex-direction: column; 
+}
+.emailAndPhoneNo{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 18px;
+}
+.email{
+    display: flex;
+    flex-direction: column; 
+}
+.phoneNo{
+    display: flex;
+    flex-direction: column; 
+}
+.password{
+    display: flex;
+    justify-content: space-around;
+}
+.passwordForm{
+    display: flex;
+    flex-direction: column; 
+}
+.ConfpasswordForm{
+    display: flex;
+    flex-direction: column; 
+}
+input{
+    height: 26px;
+    width:15vw;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+}
+input:focus {
+    outline: none; 
+    border: 1px solid blue;
+}
+input:invalid{
+    outline: none; 
+    border: 1px solid red;
+}
+label{
+ font-size: 13px;   
+}
+[for *= 'label'] h2{
+    margin-left: 70px;
+    font-size: 25px; 
+}
+.btn{
+    background-color: #596D48;
+    color: #fff;
+    width: 14vw;
+    height: 5vh;
+    border-radius: 5px;
+    border: none;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+p{
+    font-size: 16px;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+p a{
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
+}

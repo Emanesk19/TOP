@@ -9,6 +9,7 @@ const result = document.querySelector("#result");
 const equalSign = document.querySelector("#equalSign");
 const clear = document.querySelector("#clearButton");
 
+
 operators.forEach((opertation) => {
   opertation.addEventListener("click", (e) => {
     operatorClicked = true;

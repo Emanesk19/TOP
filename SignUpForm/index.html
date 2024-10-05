@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&family=Pacifico&family=Sixtyfour+Convergence&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Signup form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="imageContainer">
+        <div class="overlay">
+          <img src="./odin-lined.png" alt="" />
+          <h1>ODIN</h1>
+        </div>
+      </div>
+      <div class="formContainer">
+        <h3>
+          This is not a real online service! You know you need something like<br />
+          this in your life to help you realize your deepest dreams. <br />
+          Sign up now to get started. <br /><br />You know you want to
+        </h3>
+        <form action="">
+          <label for="label"><h2>Let's do this!</h2></label>
+          <div class="cont">
+            <div class="fnameAndLname">
+              <div class="fname">
+                <label for="fname">FIRST NAME</label>
+                <input type="text" id="fname" />
+              </div>
+              <div class="email">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" />
+              </div>
+              <div class="passwordForm">
+                <label for="passwordForm">PASSWORD</label>
+                <input
+                  type="password"
+                  id="passwordForm"
+                  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,10}$"
+                />
+              </div>
+            </div>
+
+            <div class="emailAndPhoneNo">
+              <div class="lname">
+                <label for="lname">LAST NAME</label>
+                <input type="text" id="lname" />
+              </div>
+              <div class="phoneNo">
+                <label for="phoneNo">PHONE NO.</label>
+                <input type="text" id="phoneNo" />
+              </div>
+              <div class="ConfpasswordForm">
+                <label for="ConfpasswordForm">CONFIRM PASSWORD</label>
+                <input
+                  type="password"
+                  id="ConfpasswordForm"
+                />
+                <span id="showError" style="color: red;"></span>
+              </div>
+            </div>
+          </div>
+        </form>
+        <button type="submit" class="btn">Create Account</button>
+        <p>Already have an account ? <a href="">Log in</a> </p>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>

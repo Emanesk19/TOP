@@ -14,6 +14,35 @@ btn.addEventListener("click", () => {
 });
 
 
+// function createSquares(widthSize) {    
+//   for (let i = 0; i < 240; i++) {
+//     const div = document.createElement("div");
+//     div.classList.add("divs");
+//     if (numOfSquares == 0) {
+//       div.style.width = `calc(100%/${widthSize})`;
+//       div.style.height = `calc(100%/${widthSize})`;
+//     } else {
+//       div.style.width = `${widthSize}px`;
+//       div.style.height = `${widthSize}px`;
+//     }
+
+//     const inDiv = document.createElement("p");
+
+//     div.appendChild(inDiv);
+//     container.appendChild(div);
+
+//     div.addEventListener("mouseenter", () => {
+//         let rand1 = Math.floor(Math.random() * 255) + 1; 
+//         let rand2 = Math.floor(Math.random() * 255) + 1; 
+//         let rand3 = Math.floor(Math.random() * 255) + 1;        
+//       div.style.background = `rgb(${rand1} ,${rand2} ,${rand3} )`;
+//     });
+//     // div.addEventListener("mouseleave", () => {
+//     //   div.style.background = "rgb(141, 197, 197)";
+//     // });
+//   }
+// }
+
 function createSquares(widthSize) {    
   for (let i = 0; i < 240; i++) {
     const div = document.createElement("div");
@@ -42,7 +71,6 @@ function createSquares(widthSize) {
     // });
   }
 }
-
 if(numOfSquares == 0){
     createSquares(16)
 }
