@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('../9e47af5e-2833-4f5e-bbdf-1a5683907225.webp');
+    background-size: cover;
+    background-position: center;  
+    background-repeat: no-repeat;  
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content:flex-end;
+    /* align-items: center; */
+    /* background-color: rgb(21, 25, 62); */
+    height: 15vh;
+}
+.logo{
+    color: #fff;
+
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    margin-right: 5%;
+}
+nav button{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+#btn{
+    background-color: #dfac71;
+    height: 40px;
+    width: 120px;
+    border-radius: 25px;
+}
+
+h1{
+    font-size: 50px;
+    color: #fff;
+}
+h1 i{
+    color: #dfac71;
+    /* margin-left: 30%; */
+    font-size: 40px;
+    font-style: italic;
+}
+#content{
+    text-align: center;
+    margin-top: 100px;
+}
+p{
+    color: #fff;
+    margin-top: -20px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    margin-left: 40%;
+}
+.buttons button{
+    height: 40px;
+    width: 120px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: #fff;
+}
+.buttons button:first-child{
+    background-color: #dfac71;
+    border: none;
+    font-weight: bold;
+}
+/* nav button:first-child{
+    color: #dfac71;
+    font-weight: bold;
+
+} */
+nav button:active {
+    color: #dfac71;
+
+}
+nav button:active nav button:first-child{
+    color: #fff;
+
+}
+.menuHeader  b{
+    color: #dfac71;
+}
