@@ -1,0 +1,110 @@
+*{
+ font-family: 'Courier New', Courier, monospace;   
+}
+.logo{
+    display: flex;
+    gap: 60%;
+}
+.logo-container{
+    display: flex;
+    gap: 10px;
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+}
+.logo input{
+    width: 400px;
+    height: 4vh;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    margin-top: 5px;
+}
+.today-weather h1{
+    color: lightgray;
+    margin-left: 30px;
+
+}
+.today-weather{
+    margin-left: 70px;
+    margin-right: 70px;
+    background-color: #eef1fa;
+    border-radius: 10px;
+    height: 38vh;
+    display: flex;
+    flex-direction: column;
+}
+.weather {
+    overflow-y: scroll; /* Enables vertical scrolling */
+    max-height: 400px;  /* Adjust this value to set the scrollable area */
+    scrollbar-width: none; /* For Firefox */
+    display: flex;
+    gap: 10px;
+}
+
+/* For Webkit browsers (e.g., Chrome, Safari) */
+.weather::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+}
+.weather-content{
+    display: flex;
+    background-color: #eef1fa;
+    width: 50%;
+    margin-left: 10px;
+    justify-content: center;
+    border-radius: 10px;
+}
+.weather-content p{
+    font-weight: bold;
+}
+.weather-content img{
+    width: 40px;
+    height: 40px;
+}
+.weather-container{
+    width: 100px; /* Adjust this value to increase the width of the cards */
+    padding: 10px; /* Adds space inside the cards */
+    background-color: #eef1fa;
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+    text-align: center; /* Centers the text and images */
+
+}
+
+.today-conditions{
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    background-color: #e7e9f5;
+    border-radius: 10px;
+    height: 42vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.today-conditions h1{
+    color: lightgray;
+    margin-left: 30px;
+}
+.container{
+    display: flex;
+    background-color: #eef1fa;
+    margin-left: 20px;
+    width: 20%;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+.container img{
+    width: 60;
+    height: 60px;
+}
+.col h5:first-of-type{
+    color: rgb(197, 195, 195);
+}
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+}
